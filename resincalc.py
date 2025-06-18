@@ -110,10 +110,6 @@ with tab3:
     | Humulene       | Anti-inflammatory, appetite suppressant      | White Widow, Sour Diesel              | Moderate  | 390-400        | 396                |
     | Ocimene        | Antiviral, decongestant, sweet               | Strawberry Cough, Clementine          | Low       | 320-330        | 329                |
     """)
-    st.markdown("""
-    **Notes:**
-    - **Harshness**: Terpenes like Caryophyllene can be harsh on the throat at higher concentrations.
-    - **Vaping
 
 with tab4:
     st.title("📜 Credits")
