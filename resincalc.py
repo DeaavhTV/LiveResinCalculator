@@ -1,8 +1,8 @@
 import streamlit as st
 
-st.set_page_config(page_title="Vape Batch Calculator", layout="centered")
+st.set_page_config(page_title="Live Resin Mixing Calculator", layout="centered")
 
-st.title("🧪 Vape Batch Calculator")
+st.title("🧪 Live Resin Mixing Calculator")
 
 tab1, tab2, tab3, tab4 = st.tabs(["📊 Ratio Checker", "🧪 Dilution Calculator", "🌿 Terpene Info", "📜 Credits"])
 
