@@ -4,13 +4,11 @@ st.set_page_config(page_title="Vape Batch Calculator", layout="centered")
 
 st.title("🧪 Vape Batch Calculator")
 
-tab1, tab2, tab3 = st.tabs(["📊 Ratio Checker", "🧪 Dilution Calculator", "📜 Credits"])
-
+tab1, tab2, tab3, tab4 = st.tabs(["📊 Ratio Checker", "🧪 Dilution Calculator", "🌿 Terpene Info", "📜 Credits"])
 
 with tab1:
     st.markdown("### 🧫 Batch Input")
     st.markdown("Enter number of carts to be made, amount of grams per cart and the amount of strains you are working with.")
-
 
     # Inputs
     num_carts = st.number_input("Number of Carts", min_value=1, value=43)
@@ -95,6 +93,29 @@ with tab2:
         st.info(f"🧊 Terp Sauce (non-THC) Dilution Alone: **{dilution:.2f}%**")
 
 with tab3:
+    st.title("🌿 Terpene Info")
+    st.markdown("""
+    ### Terpene Information
+    Below is a list of common terpenes found in cannabis, their effects, prominent strains, harshness, optimal vaping temperatures, and boiling points. **Never exceed a 10% terpene mixing ratio** to avoid irritation or overpowering flavors.
+    """)
+    st.markdown("""
+    | Terpene        | Effects                                      | Prominent Strains                     | Harshness | Vape Temp (°F) | Boiling Point (°F) |
+    |----------------|----------------------------------------------|---------------------------------------|-----------|----------------|--------------------|
+    | Myrcene        | Relaxing, sedative, anti-inflammatory        | OG Kush, Blue Dream, Granddaddy Purple | Low       | 330-340        | 332                |
+    | Limonene       | Uplifting, stress-relief, anti-anxiety       | Super Lemon Haze, Durban Poison       | Moderate  | 340-350        | 348                |
+    | Caryophyllene  | Anti-inflammatory, pain relief, spicy        | Girl Scout Cookies, Bubba Kush        | High      | 350-360        | 356                |
+    | Pinene         | Alertness, memory retention, anti-inflammatory | Jack Herer, Pineapple Express        | Moderate  | 310-320        | 311                |
+    | Terpinolene    | Uplifting, antioxidant, floral               | XJ-13, Orange Cookies                 | Low       | 360-370        | 365                |
+    | Linalool       | Calming, anti-anxiety, floral                | Lavender, Amnesia Haze                | Low       | 380-390        | 388                |
+    | Humulene       | Anti-inflammatory, appetite suppressant      | White Widow, Sour Diesel              | Moderate  | 390-400        | 396                |
+    | Ocimene        | Antiviral, decongestant, sweet               | Strawberry Cough, Clementine          | Low       | 320-330        | 329                |
+    """)
+    st.markdown("""
+    **Notes:**
+    - **Harshness**: Terpenes like Caryophyllene can be harsh on the throat at higher concentrations.
+    - **Vaping
+
+with tab4:
     st.title("📜 Credits")
     st.markdown("""
     **App Created by Deaavh**  
